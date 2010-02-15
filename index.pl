@@ -26,21 +26,21 @@ my $db = DB::Database->connect(
         pass => $config->{password},
     );
 # если сессия не верна и это не логин - то принудительно отправляем на логин
-if(bad_session(\%in) && $in{act} ne 'login') {
+if($c->bad_session(\%in) && $in{act} ne 'login') {
     $in{act}='default';
     $in{cookie} = undef;
 }
 
 # действие в интерфейсе
 my %act = (
-           default => \&show_login,
-           login   => \&rh_login,
-           logout  => \&rh_logout,
+           default => \&main,
+           login   => \&login,
+           logout  => \&logout,
             );
 
 # вызов нужной функции
-if(exists $in{'act'}) {
-    $html = $act{$in{'act'}}->($db, \%in, $config);
+if(exists $in{'mode'}) {
+    $html = $act{$in{'mode'}}->($db, \%in, $config);
 } else {
     $html = $act{'default'}->($db, \%in, $config);
 }

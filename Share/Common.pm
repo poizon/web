@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use Carp qw(croak);
 use HTML::Template;
+use CGI::Session ('-ip_match');
 
 sub new {
     my $class = shift;
@@ -31,7 +32,28 @@ sub read_config {
 return \%config;
 }
 
-# готовим шаблон. внутренн€€ функци€
+##
+sub bad_session {
+    my $in = shift;
+    my $s =
+      CGI::Session->load( "driver:file", $in->{cookie},
+        { Directory => './tmp' } )
+      or die CGI::Session->errstr;
+    # если сесси€ не валидна то true
+    if ( $s->is_empty or $s->is_expired ) {
+        return 1;
+    }    # если валидна то false
+    else {
+        # дергаем из сессии RhId
+        $in->{rhid} = $s->param('rhid');
+        return 0;
+    }
+
+    # по дефолту true
+    return 1;
+}
+
+# готовим шаблон.
 sub prepare_template {
     my $class = shift;
     my %args = ( -path => './template', @_,);
