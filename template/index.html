@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" >
+<title><TMPL_VAR NAME="TITLE"></title>
+<link rel="stylesheet" type="text/css" href="/styles/newmain.css" >
+<!--[if IE 6]><link rel="stylesheet" href="/styles/ie6.css" media="all" /><![endif]-->
+<>
+</head>
+
+<body>
+   
+        <!--HEADER-->
+		<TMPL_INCLUDE NAME="header.html">
+        <!---CONTENT-->
+        
+        <div class="content">
+            <div class="left_block">
+                <div class="block1">
+                    <div class="bl1_top_left"></div>
+                    <div class="bl1_top">Мама, где я?</div>
+                    <div class="bl1_top_right"></div>
+                    <div class="bl1_content0">
+                        <p>Добро пожаловать на сайт lookweb.tv. Предположительно ваша страна <b><TMPL_VAR NAME="COUNTRY"></b> или можете выбрать другую.
+Welcome to the site lookweb.tv. Your country is <TMPL_VAR NAME="COUNTRY_EN">. Other...
+Вы можете смотреть каналы, выбирая TV любой страны и любой тематики. Или воспользуйтесь одной из нескольких 
+настроенных программ. После регистрации вы сами сможете добавлять каналы в свою программу и настроить ее по
+своему вкусу.</p>
+                    </div>
+                    <div class="bl1_bottom_left"></div>
+                    <div class="bl1_bottom"></div>
+                    <div class="bl1_bottom_right"></div>
+                </div>
+                <div class="block1">
+                    <div class="bl1_top_left"></div>
+                    <div class="bl1_top">                      
+                        
+                            <a href="#"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                            <a href="#"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>    
+                            Российские TV-каналы
+                    </div>
+                    <div class="bl1_top_right"></div>
+                    <div class="bl1_content fix">
+				<!-- каналы -->
+				<TMPL_LOOP CHANELS_RU>
+						<!-- <TMPL_VAR NAME="CHANNEL"> -->
+                        <div class="channel">
+                            <div class="channel_pict">
+                                <div class="middled">
+                                    <div class="align_center_to_left">
+                                        <div class="align_center_to_right">
+                                            <img src="/img/<TMPL_VAR NAME="ICON">">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <span class="channel_name"><TMPL_VAR NAME="CHANNEL"></span>
+                                <a href="#" class="channel_icon"><img src="/img/icon4.gif" width="14px" height="14px" alt=""></a> 
+                            </div>
+                            <div class="clear">
+                                <div class="efir">в эфире:&nbsp;</div>
+                                <div class="program_name"><TMPL_VAR NAME="ONLINE"><!-- в эфире --></div>
+                            </div>
+                        </div>
+			<!-- /<TMPL_VAR NAME="CHANNEL"> -->
+                       </TMPL_LOOP CHANELS_RU>
+                        <div class="height_separator"></div> 
+                        <div class="transparent_separator"></div>
+                    </div>
+                    <div class="bl1_bottom_left"></div>
+                    <div class="bl1_bottom"></div>
+                    <div class="bl1_bottom_right"></div>
+                    
+                </div>
+                <div class="block2">
+                    <div class="bl2_top_left"></div>
+                    <div class="bl2_top">                      
+                        
+                            <a href="#"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                            <a href="#"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>    
+                            <img src="/img/icon6.gif" width="18px" height="18px" style="float:left; padding:6px 6px 0 0;"  alt="">
+                            Популярные мировые каналы
+                        
+                    </div>
+                    <div class="bl2_top_right"></div>
+                    <div class="bl2_content fix">
+                        <div class="channel">
+                            <div class="channel_pict">
+                                <div class="middled">
+                                    <div class="align_center_to_left">
+                                        <div class="align_center_to_right">
+                                            <img src="/img/ch1.jpg" width="14px" height="28px" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <span class="channel_name">Первый канал</span>
+                                <a href="#" class="channel_icon"><img src="/img/icon4.gif" width="14px" height="14px" alt=""></a> 
+                            </div>
+                            <div class="clear">
+                                <div class="efir">в эфире:&nbsp;</div>
+                                <div class="program_name">Новости</div>
+                            </div>
+                            
+                        </div>
+                        <div class="channel">
+                            <div class="channel_pict">
+                                <div class="middled">
+                                    <div class="align_center_to_left">
+                                        <div class="align_center_to_right">
+                                            <img src="/img/ch2.jpg" width="38px" height="11px" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <span class="channel_name">Россия</span>
+                                <a href="#" class="channel_icon"><img src="/img/icon2.gif" width="13px" height="13px" alt=""></a> 
+                            </div>
+                            <div class="clear">
+                                <div class="efir">в эфире:&nbsp;</div>
+                                <div class="program_name">Танцы со звездами</div>
+                            </div>
+                        </div>
+                        <div class="channel">
+                            <div class="channel_pict">
+                                <div class="middled">
+                                    <div class="align_center_to_left">
+                                        <div class="align_center_to_right">
+                                            <img src="/img/ch3.jpg" width="30px" height="30px" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <span class="channel_name">ТВЦ</span>
+                                <a href="#" class="channel_icon"><img src="/img/icon4.gif" width="14px" height="14px" alt=""></a> 
+                            </div>
+                            <div class="clear">
+                                <div class="efir">в эфире:&nbsp;</div>
+                                <div class="program_name">Новости</div>
+                            </div>
+                        </div>
+                        <div class="channel" style="margin:0;">
+                            <div class="channel_pict">
+                                <div class="middled">
+                                    <div class="align_center_to_left">
+                                        <div class="align_center_to_right">
+                                            <img src="/img/ch4.jpg" width="38px" height="30px" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <span class="channel_name">НТВ</span>
+                                <a href="#" class="channel_icon"><img src="/img/icon2.gif" width="13px" height="13px" alt=""></a> 
+                            </div>
+                            <div class="clear">
+                                <div class="efir">в эфире:&nbsp;</div>
+                                <div class="program_name">Главный герой</div>
+                            </div>
+                        </div>
+                        <div class="transparent_separator"></div>                        
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict1.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">1:22</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict2.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">2:42</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict3.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">9:02</div>
+                        </div>
+                        <div class="video" style="margin:0;">
+                            <div class="video_img"><img src="/img/video_pict4.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">0:44</div>
+                        </div>
+                        <div class="height_separator"></div> 
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict1.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">1:22</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict2.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">2:42</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict3.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">9:02</div>
+                        </div>
+                        <div class="video" style="margin:0;">
+                            <div class="video_img"><img src="/img/video_pict4.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">0:44</div>
+                        </div>
+                        <div class="height_separator"></div> 
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict1.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">1:22</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict2.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">2:42</div>
+                        </div>
+                        <div class="video">
+                            <div class="video_img"><img src="/img/video_pict3.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px"></a>
+                            <div class="time">9:02</div>
+                        </div>
+                        <div class="video" style="margin:0;">
+                            <div class="video_img"><img src="/img/video_pict4.jpg" width="122px" height="74px" alt=""></div>
+                            <a href="#" class="add_video"><img src="/img/icon5.gif" width="15px" height="15px" alt=""></a>
+                            <div class="time">0:44</div>
+                        </div>
+                        <div class="height_separator"></div> 
+                        <div class="transparent_separator"></div>
+                    </div>                    
+                    <div class="bl2_bottom_left"></div>
+                    <div class="bl2_bottom"></div>
+                    <div class="bl2_bottom_right"></div>
+                    
+                </div>
+            </div>
+            <div class="right_block">
+                <div class="info_block">
+                    <a href="#"><img src="/img/icon2.gif" width="13px" height="13px" alt="">Добавить/удалить канал</a>
+                    <a href="#"><img src="/img/icon4.gif" width="14px" height="14px" alt="">Канал в вашей программе</a>
+                </div>
+                <div class="block3">
+                    <div class="bl3_top_left"></div>
+                    <div class="bl3_top">
+                        <a href="#" onclick="document.getElementById('ch_usa').style.display = 'none'; return false;"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                        <a href="#" onclick="document.getElementById('ch_usa').style.display = 'block'; return false;"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>   
+			Тематики
+		</div>
+                    <div class="bl3_top_right"></div>
+                    <div class="bl3_content">
+                        <div class="clouds">
+                            <a href="#" class="cloud1">Новости,</a>
+                            <a href="#" class="cloud2">Спорт,</a>
+                            <a href="#" class="cloud3">Развлечения,</a>
+                            <a href="#" class="cloud1">Фильмы,</a>
+                            <a href="#" class="cloud4">Природа</a>
+                        </div>
+                    </div>
+                    <div class="bl3_bottom_left"></div>
+                    <div class="bl3_bottom"></div>
+                    <div class="bl3_bottom_right"></div>
+                </div>
+                <div class="block3">
+                    <div class="bl3_top_left"></div>
+                    <div class="bl3_top">                        
+                        <a href="#" onclick="document.getElementById('ch_russia').style.display = 'none'; return false;"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                        <a href="#" onclick="document.getElementById('ch_russia').style.display = 'block'; return false;"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>   
+                        Россия
+                    </div>
+                    <div class="bl3_top_right"></div>
+                    <div id="ch_russia">
+                    <div class="bl3_content">
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch1.jpg" width="14px" height="28px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Первый канал</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch2.jpg" width="38px" height="11px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Россия</div>
+                        </div>
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch3.jpg" width="30px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">ТВЦ</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch4.jpg" width="38px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">НТВ</div>
+                        </div>                        
+                    </div>
+                    <div class="bl3_bottom_left"></div>
+                    <div class="bl3_bottom"></div>
+                    <div class="bl3_bottom_right"></div>
+                    </div>
+                </div>
+                <div class="transparent_separator" style="height:10px;"></div>
+                <div class="block3">
+                    <div class="bl3_top_left"></div>
+                    <div class="bl3_top">
+                        <a href="#" onclick="document.getElementById('ch_usa').style.display = 'none'; return false;"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                        <a href="#" onclick="document.getElementById('ch_usa').style.display = 'block'; return false;"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>   
+                        USA
+                    </div>
+                    <div class="bl3_top_right"></div>
+                    <div id="ch_usa" style="display:none;">
+                    <div class="bl3_content">
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch1.jpg" width="14px" height="28px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Первый канал</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch2.jpg" width="38px" height="11px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Россия</div>
+                        </div>
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch3.jpg" width="30px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">ТВЦ</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch4.jpg" width="38px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">НТВ</div>
+                        </div>                        
+                    </div>                    
+                        <div class="bl3_bottom_left"></div>
+                        <div class="bl3_bottom"></div>
+                        <div class="bl3_bottom_right"></div>
+                    </div>
+                </div>
+                <div class="transparent_separator" style="height:10px;"></div>
+                <div class="block3">
+                    <div class="bl3_top_left"></div>
+                    <div class="bl3_top">
+                        <a href="#" onclick="document.getElementById('ch_britan').style.display = 'none'; return false;"><img src="/img/top_btn.gif" width="19px" height="12px"></a>    
+                        <a href="#" onclick="document.getElementById('ch_britan').style.display = 'block'; return false;"><img src="/img/bottom_btn.gif" width="19px" height="12px"></a>                           
+                        Great Britan
+                    </div>
+                    <div class="bl3_top_right"></div>
+                    <div id="ch_britan" style="display:none;">
+                    <div class="bl3_content">
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch1.jpg" width="14px" height="28px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Первый канал</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch2.jpg" width="38px" height="11px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Россия</div>
+                        </div>
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch3.jpg" width="30px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">ТВЦ</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch4.jpg" width="38px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">НТВ</div>
+                        </div>                        
+                    </div>                    
+                        <div class="bl3_bottom_left"></div>
+                        <div class="bl3_bottom"></div>
+                        <div class="bl3_bottom_right"></div>
+                    </div>
+                </div>
+                <div class="transparent_separator" style="height:10px;"></div>
+                <div class="block3">
+                    <div class="bl3_top_left"></div>
+                    <div class="bl3_top">
+                        <a href="#" onclick="document.getElementById('ch_japan').style.display = 'none'; return false;"><img src="/img/top_btn.gif" width="19px" height="12px" alt=""></a>    
+                        <a href="#" onclick="document.getElementById('ch_japan').style.display = 'block'; return false;"><img src="/img/bottom_btn.gif" width="19px" height="12px" alt=""></a>   
+                         Japan
+                    </div>
+                    <div class="bl3_top_right"></div>
+                    <div id="ch_japan" style="display:none;">
+                    <div class="bl3_content">
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch1.jpg" width="14px" height="28px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Первый канал</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch2.jpg" width="38px" height="11px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">Россия</div>
+                        </div>
+                        <div class="white_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch3.jpg" width="30px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">ТВЦ</div>
+                        </div>
+                        <div class="gray_line">
+                            <div class="left">
+                                <div class="ch_pict">
+                                    <div class="middled">
+                                        <div class="align_center_to_left">
+                                            <div class="align_center_to_right">
+                                                <img src="/img/ch4.jpg" width="38px" height="30px" alt="">
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ch_name">НТВ</div>
+                        </div>                        
+                    </div>                    
+                        <div class="bl3_bottom_left"></div>
+                        <div class="bl3_bottom"></div>
+                        <div class="bl3_bottom_right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+		<!--FOOTER-->
+
+</body>
+</html>

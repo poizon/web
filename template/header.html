@@ -1,0 +1,33 @@
+  <div class="header">
+            <div class="header_logo">
+                <img src="/img/logo.png" width="112px" height="19px" alt="" />
+            </div>
+            <TMPL_IF NAME="LOGIN">
+            <div class="header_account">
+                <span class="gray_text">(0)</span>
+                <span class="no_border"><a href="#"><img src="/img/icon1.gif" width="14px" height="10px" alt=""></a></span>
+                <span class="no_border"><a href="#"><img src="/img/icon2.gif" width="13px" height="13px" alt=""></a></span>
+                <a href="#"><b>dmitnov</b></a>
+                <a href="#">Аккаунт</a>
+                <a href="#">Сохраненные <span class="gray_text">(0)</span></a>
+                <a href="#">Справка</a>
+                <span class="no_border"><a href="#">Выйти</a></span>
+            </div>
+            <TMPL_ELSE>
+            <div class="header_account">
+                <a href="#">Справка</a>
+                <span class="no_border"><a href="?mode=login">Войти</a></span>
+            </div>    
+            </TMPL_IF>
+        </div>
+        <div class="header_menu">
+            <a href="index.html">Главная</a>
+            <a href="#">Архив</a>
+            <a href="profile.html">Профиль</a>
+            <a href="programm.html">Программа</a>
+            <form action="#" method="post" class="search_form">
+                <input type="text" value="" class="input_text">
+                <input type="button" value="Поиск" class="input_button">
+            </form>
+        </div>
+       
