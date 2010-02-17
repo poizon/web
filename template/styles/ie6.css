@@ -1,0 +1,28 @@
+.add_video
+{
+    position:static;
+    float:left;
+    margin-top:-18px;
+}
+.time
+{
+    background:#000;
+    font: 10px verdana, arial, tahoma; 
+    color:#fff;
+    padding:2px;    
+    position:static;
+    margin-top:-18px;
+}
+.channel_pict, .ch_pict 
+{
+    text-align:center;
+}
+.align_center_to_left
+{
+    position: static;
+    float:none;
+}
+.align_center_to_right
+{
+    position: static;
+}
